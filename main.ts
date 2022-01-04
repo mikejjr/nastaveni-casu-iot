@@ -9,7 +9,7 @@ input.onButtonPressed(Button.A, function () {
     )
     basic.showIcon(IconNames.Yes)
 })
-basic.showIcon(IconNames.Happy)
-basic.forever(function () {
-	
+input.onButtonPressed(Button.B, function () {
+    basic.showString("cas: " + RTC_DS1307.getTime(RTC_DS1307.TimeType.HOUR) + ":" + RTC_DS1307.getTime(RTC_DS1307.TimeType.MINUTE) + ":" + RTC_DS1307.getTime(RTC_DS1307.TimeType.SECOND))
 })
+basic.showIcon(IconNames.Happy)
